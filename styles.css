@@ -245,10 +245,10 @@ h3 { font-size: 1.25rem; }
     position: absolute;
     inset: 0;
     background: linear-gradient(
-        135deg,
-        rgba(13, 159, 79, 0.85) 0%,
-        rgba(6, 95, 46, 0.9) 50%,
-        rgba(15, 38, 21, 0.95) 100%
+        to right,
+        rgba(13, 159, 79, 0.92) 0%,
+        rgba(6, 95, 46, 0.75) 50%,
+        rgba(15, 38, 21, 0.6) 100%
     );
     z-index: 1;
 }
@@ -589,6 +589,79 @@ h3 { font-size: 1.25rem; }
 
 .badge-icon {
     font-size: 1.2rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 120px 0;
+    background: var(--off-white);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 24px;
+}
+
+.testimonial-card {
+    background: var(--white);
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.testimonial-rating {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+}
+
+.testimonial-text {
+    color: var(--gray-800);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-avatar {
+    width: 48px;
+    height: 48px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-info strong {
+    color: var(--gray-900);
+    font-size: 1rem;
+}
+
+.author-info span {
+    color: var(--gray-600);
+    font-size: 0.85rem;
 }
 
 /* Contact Section */
@@ -978,6 +1051,23 @@ h3 { font-size: 1.25rem; }
     .badge {
         font-size: 0.8rem;
         padding: 8px 12px;
+    }
+
+    .testimonials {
+        padding: 60px 0;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .testimonial-card {
+        padding: 24px 20px;
+    }
+
+    .testimonial-text {
+        font-size: 0.95rem;
     }
 
     .contact-card {
