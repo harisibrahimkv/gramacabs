@@ -883,6 +883,7 @@ h3 { font-size: 1.25rem; }
 
     .hero-text {
         width: 100%;
+        padding: 0 20px;
     }
 
     .hero-badge {
@@ -931,7 +932,7 @@ h3 { font-size: 1.25rem; }
     }
 
     .container {
-        padding: 0 20px;
+        padding: 0 24px;
     }
 
     .services-grid {
