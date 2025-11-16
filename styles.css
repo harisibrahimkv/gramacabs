@@ -1051,8 +1051,8 @@ h3 { font-size: 1.25rem; }
 
     .hero-content {
         padding: 160px 0 60px;
-        display: flex;
-        align-items: center;
+        display: block;
+        align-items: flex-start;
     }
 
     .hero-text {
