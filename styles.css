@@ -964,6 +964,7 @@ h3 { font-size: 1.25rem; }
     .navbar .container {
         flex-direction: column;
         gap: 12px;
+        position: relative;
     }
 
     .logo {
@@ -972,24 +973,24 @@ h3 { font-size: 1.25rem; }
 
     .lang-toggle {
         position: absolute;
-        top: 10px;
-        right: 16px;
+        top: 0;
+        right: 0;
         font-size: 0.7rem;
-        padding: 4px 10px;
+        padding: 4px 8px;
     }
 
     .lang-toggle::before {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         margin-right: 2px;
     }
 
     .lang-current {
-        padding: 2px 6px;
-        font-size: 0.65rem;
+        padding: 2px 5px;
+        font-size: 0.6rem;
     }
 
     .lang-option {
-        font-size: 0.65rem;
+        font-size: 0.6rem;
     }
 
     .navbar.scrolled .lang-toggle {
