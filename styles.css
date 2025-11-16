@@ -808,6 +808,17 @@ h3 { font-size: 1.25rem; }
 @media (max-width: 768px) {
     .mobile-menu-btn {
         display: block;
+        position: relative;
+        z-index: 1001;
+    }
+
+    .navbar {
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar .container {
+        position: relative;
     }
 
     .nav-links {
@@ -857,29 +868,49 @@ h3 { font-size: 1.25rem; }
     }
 
     .hero-content {
-        padding: 100px 0 80px;
+        padding: 140px 0 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-text {
+        width: 100%;
     }
 
     .hero-badge {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         padding: 6px 12px;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 16px;
     }
 
     .hero-description {
-        font-size: 1rem;
-        margin-bottom: 32px;
+        font-size: 0.95rem;
+        margin-bottom: 28px;
+        line-height: 1.6;
     }
 
     .hero-stats {
-        gap: 24px;
+        gap: 16px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .stat {
+        text-align: center;
+        flex: 1;
     }
 
     .stat-number {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .stat-label {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
     .services-grid {
